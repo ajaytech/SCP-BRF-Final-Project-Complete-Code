@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="demo.enterFinanceVal.controller.home" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Managment">
+					<content>
+						<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true"
+							layout="ResponsiveGridLayout" id="form0">
+							<Label text="Month N" id="label00"/>
+							<Select id="monthInput"
+									items="{demo_data>/month}">
+										<core:Item key="{demo_data>key}" text="{demo_data>name}" />
+							</Select>
+							<sap.ui.layout.form:content>
+								
+								
+									<Label text="Month N" id="label0"/>
+									<Input width="100%" id="input1" value="{demo_data>/n}"/>
+									<Label text="Month N-1" id="label1"/>
+									<Input width="100%" id="input2" value="{demo_data>/n1}"/>
+									<Label text="Month N-2" id="label2"/>
+									<Input width="100%" id="input3" value="{demo_data>/n2}"/>
+								</sap.ui.layout.form:content>
+							</sap.ui.layout.form:SimpleForm>
+							<Button xmlns="sap.m" class="buttonNew" text="Update" id="button0" press="onSubmit"/>
+						</content>
+					</Page>
+				</pages>
+			</App>
+		</Shell>
+	</mvc:View>
