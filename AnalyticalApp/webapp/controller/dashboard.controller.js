@@ -183,15 +183,6 @@ sap.ui.define([
 			oView.getModel("demo_data").setData(oData);
 			
 
-		},
-		handlBRFFirstLoad: function(){
-			
-		
-			
-		},
-		getBRFTarget: function () {
-		
-	
 		}
 
 	});
